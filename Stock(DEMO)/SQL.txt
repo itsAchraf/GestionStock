@@ -1,0 +1,9 @@
+********************$table$**************************
+CREATE TABLE materials (
+IDM char(10) primary key ,
+type char(50) not null ,
+dateF date,
+mark char(50),
+fournisseur char(50));
+********************$table$**************************
+create table Use as select  IDM, type from materials ;
